@@ -1,0 +1,75 @@
+<HTML><HEAD><TITLE>Occluder Simplification using Planar Sections</TITLE>
+</head>
+<BODY>
+	<center>
+      <!-- <h1 id="title">Occluder Simplification using Planar Sections</h1> -->
+      <h1>Occluder Simplification using Planar Sections</h1>
+        <div class="author">
+            <a class="author" href="https://users.aalto.fi/~silvena4/">Ari Silvennoinen<sup><small>1,2,4</small></sup></a>
+            Hannu Saransaari<sup><small>1</small></sup>
+            <a class="author" href="http://mediatech.aalto.fi/~samuli/">Samuli Laine<sup><small>3</small></sup></a>
+            <a class="author" href="http://mediatech.aalto.fi/~jaakko/">Jaakko Lehtinen<sup><small>2,3</small></sup></a>
+
+            <p>
+        <span class="affiliation"><sup><small>1</small></sup><a href="http://www.umbrasoftware.com/">Umbra Software Ltd.</a></span>
+	    <span class="affiliation"><sup><small>2</small></sup><a href="http://mediatech.aalto.fi/">Aalto University</a></span>
+        <span class="affiliation"><sup><small>3</small></sup><a href="http://research.nvidia.com/">NVIDIA Research</a></span>
+        <span class="affiliation"><sup><small>4</small></sup><a href="http://www.remedygames.com/">Remedy Entertainment Ltd.</a></span></p>
+	    Computer Graphics Forum 33(1), 2014.
+           
+        </div>
+        <BR>
+
+
+<TABLE width=700>
+  <TBODY>
+  <TR><td>
+      
+<IMG SRC="./teaser.png" WIDTH="700"/>
+Left: Hairball and simplified occluder with 16 triangles (0.0005% of original). Right: Bunny and simplified
+occluder with 64 triangles (1.3% of original).
+
+	<h2>Abstract</h2>
+
+We present a method for extreme occluder simplification. We take a triangle soup as input, and produce a small set
+of polygons with closely matching occlusion properties. In contrast to methods that optimize the original geometry,
+our algorithm has very few requirements for the input - specifically, the input does not need to be a watertight,
+two-manifold mesh. This robustness is achieved by working on a well-behaved, discretized representation of the
+input instead of the original, potentially badly structured geometry. We first formulate the algorithm for individual
+occluders, and further introduce a hierarchy for handling large, complex scenes.
+<P/>
+
+<hr> 
+
+<h3>Downloads</h3>                                                                                       
+<ul>                                                                                                      
+<li> <a href="../../Publications/Occluder_Simplification_using_Planar_Sections.pdf">Preprint (17 MB PDF)</a> 
+<li> <a href="../../Publications/Occluder_Simplification_using_Planar_Sections_Video.mp4">Video (51 MB MP4)</a> 
+</ul> 
+
+<hr> 
+
+<h3>Bibtex</h3>
+<pre>
+@article {Silvennoinen2014CGF,
+author = {Silvennoinen, Ari and Saransaari, Hannu and Laine, Samuli and Lehtinen, Jaakko},
+title = {Occluder Simplification Using Planar Sections},
+journal = {Computer Graphics Forum},
+volume = {33},
+number = {1},
+issn = {1467-8659},
+url = {http://dx.doi.org/10.1111/cgf.12271},
+doi = {10.1111/cgf.12271},
+pages = {235--245},
+year = {2014},
+}
+</pre>
+
+<hr>
+<i>Ari Silvennoinen, Feb 28 2014</i>
+</td></TR></TBODY>
+</table>
+</center>
+
+</BODY>
+</HTML>

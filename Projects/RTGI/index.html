@@ -1,0 +1,68 @@
+
+<HTML><HEAD><TITLE>Real-time Global Illumination by Precomputed Local Reconstruction from Sparse Radiance Probes</TITLE>
+</head>
+<BODY>
+	<center>
+      <!-- <h1 id="title">Occluder Simplification using Planar Sections</h1> -->
+      <h1>Real-time Global Illumination by Precomputed Local Reconstruction <br> from Sparse Radiance Probes</h1>
+        <div class="author">
+            <a class="author" href="https://users.aalto.fi/~silvena4/">Ari Silvennoinen<sup><small>1,2</small></sup></a>
+            <a class="author" href="http://mediatech.aalto.fi/~jaakko/">Jaakko Lehtinen<sup><small>1,3</small></sup></a>
+            <p>
+	      <span class="affiliation"><sup><small>1</small></sup><a href="http://mediatech.aalto.fi/">Aalto University</a></span>
+        <span class="affiliation"><sup><small>2</small></sup><a href="http://www.remedygames.com/">Remedy Entertainment Ltd.</a></span>
+        <span class="affiliation"><sup><small>3</small></sup><a href="http://research.nvidia.com/">NVIDIA Research</a></span></p>
+	      ACM Transaction on Graphics 36(6), (SIGGRAPH Asia 2017)
+        </div>
+        <BR>
+
+<TABLE width=700>
+  <TBODY>
+  <TR><td>
+      
+<IMG SRC="./paper_teaser.png" WIDTH="775"/><br>
+(left) Real-time global illumination rendered using our method in 3.9ms with fully dynamic lights, cameras and diffuse surface materials.
+(right) Ground truth (converged path tracing).
+
+	<h2>Abstract</h2>
+
+We present a direct-to-indirect transport technique that enables accurate real-time rendering of indirect illumination in mostly static scenes of complexity on par with modern games while supporting fully dynamic lights, cameras and diffuse surface materials. Our key contribution is an algorithm for reconstructing the incident radiance field from a sparse set of local samples --- radiance probes --- by incorporating mutual visibility into the reconstruction filter. 
+To compute global illumination, we factorize the direct-to-indirect transport operator into global and local parts, sample the global transport with sparse radiance probes at real-time, and use the sampled radiance field as input to our precomputed local reconstruction operator to obtain indirect radiance. In contrast to previous methods aiming to encode the global direct-to-indirect transport operator, our precomputed data is local in the sense that it needs no long-range interactions between probes and receivers, and every receiver depends only on a small, constant number of nearby radiance probes, aiding compression, storage, and iterative workflows.
+While not as accurate, we demonstrate that our method can also be used for rendering indirect illumination on glossy surfaces, and approximating global illumination in scenes with large-scale dynamic geometry.
+<P/>
+
+<hr>
+
+<h3>Downloads</h3>                                                                                       
+<ul>                                                                                                      
+<li> <a href="../../Publications/Real-time_Global_Illumination_by_Precomputed_Local_Reconstruction_from_Sparse_Radiance_Probes.pdf">Preprint (76 MB PDF)</a> 
+<li> <a href="../../Publications/Real-time_Global_Illumination_by_Precomputed_Local_Reconstruction_from_Sparse_Radiance_Probes_Video.mp4">Hiqh Quality Video (475 MB MP4)</a> 
+<li> <a href="https://youtu.be/YTSlMwh-79M">YouTube Video</a> 
+</ul> 
+
+<hr>
+
+<h3>Bibtex</h3>
+<pre>
+@article{Silvennoinen:2017,
+    author = {Ari Silvennoinen and Jaakko Lehtinen},
+    title = {Real-time Global Illumination by Precomputed Local Reconstruction from Sparse Radiance Probes},
+    journal = {ACM Transactions on Graphics (Proceedings of SIGGRAPH Asia)},
+    volume = {36},
+    number = {6},
+    year = {2017},
+    month = nov,
+    pages = {230:1--230:13},
+    url = {https://doi.org/10.1145/3130800.3130852},
+    doi = {10.1145/3130800.3130852} 
+}
+</pre>
+
+<hr>
+<i>Ari Silvennoinen, Sep 18 2017</i>
+</td></TR></TBODY>
+</table>
+</center>
+
+</BODY>
+</HTML>
